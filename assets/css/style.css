@@ -1,0 +1,144 @@
+:root {
+    --purple-light: #E3B7EC;
+    --purple-medium: #754F88;
+    --purple-dark: #3F1348;
+  }
+
+body {
+    background-color: #111;
+}
+
+header {
+    position: relative;
+    display: flex;
+    background-color: rgb(8, 8, 8);
+    padding: 27px ;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+nav a {
+    color: var(--purple-light);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+
+
+.sig-icon img {
+    width: 60px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+
+main {
+    text-align: center;
+    color: #FFF;
+}
+
+#hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("../images/balconyphoto.jpg");
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 100px;
+}
+
+#hero h1 {
+    padding-top: 60%;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+#hero span {
+    font-size: 20px;
+}
+
+main section {
+    padding: 40px 8px;
+}
+
+h2 {
+    padding: 8px;
+    font-size: 30px;
+}
+
+p, h3 {
+    padding: 12px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.opus a {
+    font-size: 30px;   
+    margin: 20px;
+    align-items: center;
+}
+
+.opus a img {
+    opacity: 50%;
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    transition: 0.04s;
+}
+
+a:hover {
+    color: var(--purple-light);
+}
+
+.opus a:hover {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.opus a:hover img {
+    opacity: 100%;
+    width: 370px;
+    height: 370px;
+}
+
+figure a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--purple-medium);
+}
+
+.other-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.other-work a {
+    margin: 10px;
+}
+.other-work a:hover {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.other-work a img {
+    opacity: 50%;
+    width: 150px;
+    height: 150 px;
+    margin: 10px;
+    transition: 0.04s;
+}
+
+.other-work a:hover img {
+    opacity: 100%;
+    width: 160px;
+    height: 160px;
+}
+
+@media (min-width: 750px) {
+    .bio {
+        float: left;
+        width: 750px;
+    }
+
+}
